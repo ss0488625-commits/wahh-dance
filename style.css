@@ -1,0 +1,375 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+    --black: #080808;
+    --panel: #111111;
+    --red: #ff1738;
+    --white: #ffffff;
+    --gray: #a6a6a6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--black);
+    color: var(--white);
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    min-height: 78px;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    background: #080808;
+    border-bottom: 1px solid #252525;
+}
+
+.logo {
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+}
+
+.logo span, h2 span {
+    color: var(--red);
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+nav a {
+    color: #ddd;
+    font-size: 13px;
+    text-decoration: none;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: var(--red);
+}
+
+.btn {
+    display: inline-block;
+    border: 1px solid var(--red);
+    border-radius: 5px;
+    padding: 13px 22px;
+    background: var(--red);
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: transparent;
+    color: var(--red);
+    box-shadow: 0 0 20px #ff173833;
+    transform: translateY(-2px);
+}
+
+.hero {
+    min-height: 510px;
+    display: flex;
+    align-items: center;
+    padding: 70px 8%;
+    background:
+        linear-gradient(90deg, #080808 8%, #080808dd 43%, #08080833 100%),
+        url("https://images.unsplash.com/photo-1504609813442-a8924e83f76e?auto=format&fit=crop&w=1800&q=85")
+        center 40% / cover no-repeat;
+    border-bottom: 1px solid #292929;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.tag {
+    color: var(--red);
+    font-size: 11px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;
+}
+
+.hero h1 {
+    font-size: clamp(44px, 6vw, 76px);
+    line-height: 1.1;
+    letter-spacing: 1px;
+}
+
+.hero h1 span {
+    color: var(--red);
+    font-style: italic;
+}
+
+.description {
+    max-width: 440px;
+    margin: 24px 0;
+    color: #ccc;
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+.section {
+    padding: 75px 8%;
+}
+
+.section h2 {
+    font-size: clamp(30px, 4vw, 42px);
+    margin-bottom: 12px;
+}
+
+.muted {
+    color: var(--gray);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+    margin-top: 32px;
+}
+
+.card {
+    background: var(--panel);
+    border: 1px solid #292929;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: .3s;
+}
+
+.card:hover {
+    border-color: var(--red);
+    transform: translateY(-5px);
+}
+
+.dance-img {
+    height: 165px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 65px;
+    font-weight: 700;
+    color: #ffffffaa;
+    background: linear-gradient(135deg, #360008, #111, #800014);
+}
+
+.bollywood {
+    background: linear-gradient(135deg, #180707, #7c1025, #111);
+}
+
+.contemporary {
+    background: linear-gradient(135deg, #111, #292929, #50000d);
+}
+
+.breakdance {
+    background: linear-gradient(135deg, #5d0010, #111, #300008);
+}
+
+.card h3 {
+    font-size: 19px;
+    padding: 17px 16px 8px;
+}
+
+.card > p {
+    padding: 0 16px 20px;
+    color: var(--gray);
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.about {
+    background: #101010;
+    border-top: 1px solid #242424;
+    border-bottom: 1px solid #242424;
+}
+
+.about .muted {
+    max-width: 680px;
+}
+
+.stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px;
+    margin-top: 30px;
+}
+
+.stats strong {
+    color: var(--red);
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+}
+
+.stats p {
+    color: var(--gray);
+    font-size: 12px;
+    margin-top: 6px;
+}
+
+.plan {
+    padding: 25px 20px;
+}
+
+.plan h3 {
+    padding: 0 0 12px;
+}
+
+.plan .price {
+    color: var(--red);
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+
+.plan .price span {
+    color: var(--gray);
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.plan > p:not(.tag) {
+    padding: 7px 0;
+}
+
+.plan .btn {
+    display: block;
+    text-align: center;
+    margin-top: 18px;
+}
+
+.featured {
+    border-color: var(--red);
+    box-shadow: 0 0 22px #ff173814;
+}
+
+.featured .tag {
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.outline {
+    background: transparent;
+    color: var(--red);
+}
+
+.contact {
+    background: #101010;
+    text-align: center;
+}
+
+.contact form {
+    display: grid;
+    gap: 14px;
+    max-width: 450px;
+    margin: 30px auto 0;
+}
+
+input, select {
+    width: 100%;
+    padding: 15px;
+    background: #080808;
+    color: white;
+    border: 1px solid #333;
+    border-radius: 5px;
+    font: inherit;
+    font-size: 13px;
+}
+
+input:focus, select:focus {
+    outline: 1px solid var(--red);
+    border-color: var(--red);
+}
+
+#message {
+    color: var(--red);
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    padding: 25px 8%;
+    border-top: 1px solid #252525;
+}
+
+footer p {
+    color: var(--gray);
+    font-size: 11px;
+}
+
+@media (max-width: 900px) {
+    .cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    header {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 550px) {
+    nav {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        min-height: 440px;
+        padding: 55px 6%;
+        background-position: 60% center;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+    }
+
+    .section {
+        padding: 55px 6%;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .dance-img {
+        height: 190px;
+    }
+
+    .stats {
+        gap: 25px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}

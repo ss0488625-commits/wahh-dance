@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dance Academy | Official Website</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <a href="#home" class="logo">DANCE<span> ACADEMY</span></a>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#classes">Classes</a>
+        <a href="#about">About</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <a href="#contact" class="btn">Join Now ↗</a>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <p class="tag">TRAIN / PERFORM / ACHIEVE</p>
+        <h1>FEEL THE BEAT<br>
+        <span>LIVE THE DANCE</span></h1>
+        <p class="description">
+            Discover your rhythm, build confidence and
+            express yourself through the art of dance.
+        </p>
+        <a href="#classes" class="btn">Explore Classes →</a>
+    </div>
+</section>
+
+<section class="section" id="classes">
+    <p class="tag">OUR CLASSES</p>
+    <h2>DANCE <span>STYLES</span></h2>
+    <p class="muted">Choose your style. Find your vibe.</p>
+
+    <div class="cards">
+        <article class="card">
+            <div class="dance-img hiphop">01</div>
+            <h3>HIP HOP</h3>
+            <p>Street style, energy & freedom.</p>
+        </article>
+
+        <article class="card">
+            <div class="dance-img bollywood">02</div>
+            <h3>BOLLYWOOD</h3>
+            <p>Feel the rhythm, live the culture.</p>
+        </article>
+
+        <article class="card">
+            <div class="dance-img contemporary">03</div>
+            <h3>CONTEMPORARY</h3>
+            <p>Express. Emote. Evolve.</p>
+        </article>
+
+        <article class="card">
+            <div class="dance-img breakdance">04</div>
+            <h3>BREAKDANCE</h3>
+            <p>Power, balance, control.</p>
+        </article>
+    </div>
+</section>
+
+<section class="about section" id="about">
+    <p class="tag">ABOUT US</p>
+    <h2>MORE THAN A DANCE CLASS</h2>
+    <p class="muted">
+        We help dancers of every level build skills,
+        confidence and creativity with expert guidance.
+        Join our community and discover your potential.
+    </p>
+
+    <div class="stats">
+        <div><strong>10+</strong><p>Expert Trainers</p></div>
+        <div><strong>500+</strong><p>Happy Students</p></div>
+        <div><strong>5+</strong><p>Years of Experience</p></div>
+    </div>
+</section>
+
+<section class="section" id="pricing">
+    <p class="tag">MEMBERSHIP PLANS</p>
+    <h2>CHOOSE YOUR <span>PLAN</span></h2>
+
+    <div class="cards">
+        <article class="card plan">
+            <h3>BASIC</h3>
+            <div class="price">₹999<span>/month</span></div>
+            <p>✓ 2 classes per week</p>
+            <p>✓ Beginner friendly</p>
+            <a href="#contact" class="btn outline">Get Started</a>
+        </article>
+
+        <article class="card plan featured">
+            <p class="tag">POPULAR</p>
+            <h3>PRO</h3>
+            <div class="price">₹1,999<span>/month</span></div>
+            <p>✓ 5 classes per week</p>
+            <p>✓ Choreography practice</p>
+            <a href="#contact" class="btn">Get Started</a>
+        </article>
+
+        <article class="card plan">
+            <h3>PREMIUM</h3>
+            <div class="price">₹2,999<span>/month</span></div>
+            <p>✓ Advanced training</p>
+            <p>✓ Performance preparation</p>
+            <a href="#contact" class="btn outline">Get Started</a>
+        </article>
+    </div>
+</section>
+
+<section class="contact section" id="contact">
+    <p class="tag">JOIN NOW</p>
+    <h2>START YOUR JOURNEY</h2>
+    <p class="muted">Take the first step towards your dream.</p>
+
+    <form id="joinForm">
+        <input type="text" id="name"
+               placeholder="Full Name" required>
+
+        <input type="email" id="email"
+               placeholder="Email Address" required>
+
+        <select id="style" required>
+            <option value="">Select Dance Style</option>
+            <option>Hip Hop</option>
+            <option>Bollywood</option>
+            <option>Contemporary</option>
+            <option>Breakdance</option>
+        </select>
+
+        <button type="submit" class="btn">Submit Application →</button>
+        <p id="message"></p>
+    </form>
+</section>
+
+<footer>
+    <a href="#home" class="logo">DANCE<span> ACADEMY</span></a>
+    <p>© 2026 Dance Academy. Keep moving. Keep growing.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
